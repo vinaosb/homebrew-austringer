@@ -1,20 +1,20 @@
 class AustringerDaemon < Formula
   desc "The austringer engine daemon: sessions, routing, permissions, cost budgets"
   homepage "https://vinaosb.github.io/austringer/"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vinaosb/austringer/releases/download/v0.1.2/austringer-daemon-aarch64-apple-darwin.tar.xz"
-      sha256 "665d4f09633e2f1dc11a238988f75906ba4dd6b94a37f2674d27b279b28d48db"
+      url "https://github.com/vinaosb/austringer/releases/download/v0.1.3/austringer-daemon-aarch64-apple-darwin.tar.xz"
+      sha256 "6db3975c6fc1a168719555837f7c5ffe817e03ddf6890dd4fe95b218608572aa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vinaosb/austringer/releases/download/v0.1.2/austringer-daemon-x86_64-apple-darwin.tar.xz"
-      sha256 "fa828f85f523511ba7eebe9a7ebcca42780e6766b314e617b4f22ff7b75c5151"
+      url "https://github.com/vinaosb/austringer/releases/download/v0.1.3/austringer-daemon-x86_64-apple-darwin.tar.xz"
+      sha256 "6a973da6c9b8b1e2a825d4be803130bd640124e14059238543ce1739b0f9ddc7"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/vinaosb/austringer/releases/download/v0.1.2/austringer-daemon-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "b4f203111506c62edbef09164427d4558440f81fd468f58feb54fe3b8ce4cdee"
+    url "https://github.com/vinaosb/austringer/releases/download/v0.1.3/austringer-daemon-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "b49f17ad8be0c1e3a2db8038583f83ffe11362715cf2f7f5929afa20a2f4bee3"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
