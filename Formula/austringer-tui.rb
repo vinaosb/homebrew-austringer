@@ -1,20 +1,20 @@
 class AustringerTui < Formula
   desc "Terminal user interface for the austringer daemon (ratatui)"
   homepage "https://vinaosb.github.io/austringer/"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vinaosb/austringer/releases/download/v0.1.2/austringer-tui-aarch64-apple-darwin.tar.xz"
-      sha256 "b603d1cfc39694be6669c51e8bb7d9a5032d5542932ef8878b1005a6f8703ae5"
+      url "https://github.com/vinaosb/austringer/releases/download/v0.1.3/austringer-tui-aarch64-apple-darwin.tar.xz"
+      sha256 "b321967c77d9a3c5041172da196076868348bc44181538ab7f2cb221f603c77d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vinaosb/austringer/releases/download/v0.1.2/austringer-tui-x86_64-apple-darwin.tar.xz"
-      sha256 "25057bb72a116745deef9d4d752bab5e9b94de58db0e1e0598f4a28a6bea211a"
+      url "https://github.com/vinaosb/austringer/releases/download/v0.1.3/austringer-tui-x86_64-apple-darwin.tar.xz"
+      sha256 "415d2e566e55a909bf131c444b6d2279899ec56f9349f4bb4f22aea2c21d251e"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/vinaosb/austringer/releases/download/v0.1.2/austringer-tui-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "0fd6e6d34b5260e46b06fe304e43537535468afaed7fe9cb70c4f229534acb3c"
+    url "https://github.com/vinaosb/austringer/releases/download/v0.1.3/austringer-tui-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "f4ed87942f31d2bf9812955ff28a0f40ed8ce1bc580aaa689605accba46ad533"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
