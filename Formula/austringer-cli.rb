@@ -1,20 +1,20 @@
 class AustringerCli < Formula
   desc "Thin terminal client over the austringer daemon (run, capture, REPL, attach, doctor)"
   homepage "https://vinaosb.github.io/austringer/"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/vinaosb/austringer/releases/download/v0.1.2/austringer-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "1ac6c1602408840831689db3f1ee75d8d62faefc664d7c8e4b97bd5d4c0d0e61"
+      url "https://github.com/vinaosb/austringer/releases/download/v0.1.3/austringer-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "9f8df379650e20065c7f35dcc634a5f06db1afea484036f12df7b740758e8c20"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vinaosb/austringer/releases/download/v0.1.2/austringer-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "50fc844dc4e4225176308a29a2e122b9d028b967ebbdd78012f5e7e0b1199683"
+      url "https://github.com/vinaosb/austringer/releases/download/v0.1.3/austringer-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "6314c17178ad564e0a0e4a97905889e17fccd437eff1325c8f9812ddfd862cae"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/vinaosb/austringer/releases/download/v0.1.2/austringer-cli-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "b77cc9e3b09f057b73780f4d84d0adc9a2c57d1d146a90981d472bec4deb4fe7"
+    url "https://github.com/vinaosb/austringer/releases/download/v0.1.3/austringer-cli-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "df065371fa8aa8cabd4e44a9241859747223619094c0e3b6888788d7ebb1811f"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
